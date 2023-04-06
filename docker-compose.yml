@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./webapp:/webapp
+    command: >
+      sh -c "python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+      # sh -c "sleep infinity"
+    env_file: 
+      - .env
+    depends_on:
+      - db
+  
+  db:
+    image: postgres:13-alpine
+    volumes:
+      - dev-db-data:/var/lib/postgresql/data
+    env_file: 
+      - .env
+
+volumes:
+  dev-db-data:

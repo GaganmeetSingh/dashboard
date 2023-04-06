@@ -1,0 +1,47 @@
+#registerAsCook {
+    color: rgb(67, 68, 104);
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+#signupBox {
+    padding-bottom:20px;
+}
+#firstName {
+    margin-bottom:10px;
+}
+#lastName {
+    margin-bottom:10px;
+}
+#phoneNumber {
+    margin-bottom:10px;
+}
+#email {
+    margin-bottom:10px;
+}
+#password {
+    margin-bottom:10px;
+}
+#retypePassword {
+    margin-bottom:10px;
+}
+#DOB {
+    margin-bottom:10px;
+}
+#dobLabel {
+    padding-top:5px;
+   
+}
+#gender {
+    margin-bottom:10px;
+}
+#signUp {
+    background-color: rgb(23, 24, 62);
+    color: rgb(238, 239, 248);
+    padding-left:100px;
+    padding-right:100px;
+    border:rgb(67, 68, 104) 1px solid;
+}
+#signUp:hover {
+    background-color: rgb(67, 68, 104);
+    border:rgb(23, 24, 62) 1px solid;
+}

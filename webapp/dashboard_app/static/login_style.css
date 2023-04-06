@@ -1,0 +1,87 @@
+
+#mainContent {
+    margin-top:20px;
+}
+#top_line {
+    color: rgb(23, 24, 62);
+}
+#logIn {
+    color: rgb(67, 68, 104);
+}
+#signup_cook {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    width: 90%;
+    
+}
+#signupButton {
+    background-color:  rgb(23, 24, 62);
+    color: rgb(238, 239, 248);
+    margin-top: 30px;
+    border:rgb(67, 68, 104) 1px solid;
+    
+}
+#signupButton:hover {
+    background-color: rgb(67, 68, 104);
+    color: rgb(238, 239, 248);
+    margin-top: 30px;
+    border:rgb(23, 24, 62) 1px solid;
+}
+#signupButton:active {
+    background-color: rgb(67, 68, 104);
+    color: rgb(238, 239, 248);
+    margin-top: 30px;
+    border:rgb(23, 24, 62) 1px solid; 
+    box-shadow: 5px 5px 5px 5px red;   
+}
+#username {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+#loginButton {
+    width:100%;
+    margin-top:5px;
+    background-color:  rgb(23, 24, 62);
+    color: rgb(238, 239, 248);
+    border:rgb(67, 68, 104) 1px solid;
+    
+}
+#loginButton:hover {
+    width:100%;
+    margin-top:5px;
+    background-color: rgb(67, 68, 104);
+    color: rgb(238, 239, 248);
+    border:rgb(52, 52, 56) 1px solid;
+  
+}
+#forgottenPassword { 
+    color: rgb(23, 24, 62);
+    margin-top:7px;
+}
+#forgottenPassword:hover { 
+    color: rgb(67, 68, 104);
+}
+#newAccount {
+    color: rgb(23, 24, 62);
+    font-size: 20px;
+}
+#newAccount:hover { 
+    color: rgb(67, 68, 104);
+}
+#fbLogo {
+    margin:10px;
+    color: rgb(23, 24, 62);
+    text-decoration:none;
+    font-size: 20px;;
+}
+#googleLogo {
+    margin:10px;
+    color: rgb(23, 24, 62);
+    text-decoration:none;
+    font-size: 20px;
+}
+#forgottenPwd {
+    margin-top:5px;
+}

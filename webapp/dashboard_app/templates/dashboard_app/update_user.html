@@ -1,0 +1,39 @@
+<h1>Update user</h1>
+<form method="post" action="{% url 'dashboard_app:update' user.id %}">
+    {% csrf_token %}
+    <div class="form-group">
+        <label> Id</label>
+        <label> {{user.id}}</label>
+    </div>
+    <div class="form-group">
+        <label> Name</label>
+        <input type="text" id="name" class="form-control" value={{user.name}} name="name">
+    </div>
+    <div class="form-group">
+        <label> Email</label>
+        <input type="text" id="email" class="form-control" value={{user.email_id}} name="email" >
+    </div>
+    <div class="form-group">
+        <label> Phone Number</label>
+        <input type="text" id="phone_number" class="form-control" value={{user.phone_number}} name="phone_number" >
+    </div>
+    <div class="form-group">
+        <label> Description</label>
+        <input type="text" id="description" class="form-control" value={{user.description}} name="description" >
+    </div>
+    <div class="form-group">
+        <label> Active</label>
+        <input type="checkbox" id="active" class="form-control" value="active" {% if user.active %} checked {% endif %} name="active">
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="submit" id="UpdateButton" class="btn btn-primary">Update</button>
+        </div>  
+        {% if is_self_user %} 
+        <div class="col-sm-6" id="forgottenPwd">
+            <a href="{% url 'dashboard_app:reset_password' user.id %}" id="forgottenPassword">Reset password?</a>
+        </div>  
+        {% endif %}
+    </div>
+</form>
+</table>

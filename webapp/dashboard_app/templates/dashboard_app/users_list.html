@@ -1,0 +1,22 @@
+<h1>User List</h1>
+    <table>
+        <tr>
+         
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Description</th>
+          <th>Active</th>
+        </tr>
+{% for user in object_list %}
+  <tr>
+   
+    <td>{{user.name}}</td> 
+    <td>{{user.email_id}}</td>
+    <td> {{user.phone_number}}</td>
+    <td> {{user.description}}</td>
+    <td> {{user.active}}</td>
+    <td> <a id="updateUser" href="{% url 'dashboard_app:update' user.id %}">Update</a></td>
+  </tr>
+{% endfor %}
+</table>
